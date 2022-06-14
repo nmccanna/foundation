@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This website is awesome</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+          margin: 0;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .header {
+          overflow: hidden;
+          background-color:white;
+          padding-top: 25px;
+          padding-right: 50px;
+          padding-left: 50px;
+          padding-bottom: 25px;
+        }
+        
+        .header a {
+          float: left;
+          color: black;
+          text-align: center;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 23px; 
+          line-height: 25px;
+          border-radius: 4px;
+        }
+        
+        .header a.logo {
+          font-size: 25px;
+          font-weight: bold;
+        }
+        
+        .header a:hover {
+        background-color: gray;
+        color: whitesmoke;
+        border-radius: 15px;
+        text-shadow: 0 0 3px #040404;
+        }
+        
+        .header a.active {
+          background-color: dodgerblue;
+          color: white;
+        }
+        
+        .header-right {
+          float: right;
+        }
+        
+        @media screen and (max-width: 500px) {
+        .header a {
+            float: none;
+            display: block;
+            text-align: left;
+          }
+
+        .header-right {
+            float: none;
+            }
+
+        }
+
+.introduction {
+background-image: url("https://cdn.pixabay.com/photo/2018/04/30/12/25/asphalt-3362559_1280.jpg");
+background-size: cover;
+overflow: hidden;
+padding-top: 50px;
+padding-right: 50px;
+padding-left: 50px;
+padding-bottom: 50px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 25px;
+}
+
+.introduction h1 {
+    color: rgb(247, 244, 244);
+    text-shadow: 0 0 3px #040404;
+}
+
+.introduction sub {
+    color: rgb(249, 247, 247);
+    text-shadow: 0 0 3px #040404;
+}
+
+.introduction img {
+border: 2px solid rgb(0, 0, 0);
+border-radius: 25px;
+cursor: pointer;
+}
+
+.introduction button {
+  background-color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: whitesmoke;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/*Flex should be applied to the parent of elements you want to show side by side*/
+.container {
+display: flex;
+justify-content: center;
+gap: 2.5%;
+background-color: white;
+padding-top: 50px;
+padding-right: 50px;
+padding-left: 50px;
+padding-bottom: 50px;
+text-align: center;
+font-size: x-large;
+}
+
+.container img {
+cursor: pointer;
+overflow: hidden;
+border: 2px solid rgb(0, 0, 0);
+border-radius: 25px;
+}
+
+
+.ending {
+    background-image: url("https://cdn.pixabay.com/photo/2017/03/10/11/02/cockpit-2132456_1280.jpg");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: rgb(249, 249, 247);
+    text-shadow: 0 0 5px #060606;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ending img {
+    filter: brightness(0.00);
+}
+
+</style>
+
+</head>
+<body>
+<header>
+<div class="header">
+    <img src="https://i.imgur.com/QKYPwn6.jpg"  width="80px" length="auto" class="logo"></a>
+<div class="header-right">
+    <a href="#home">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#aboutUS">About Us</a>
+    </div>
+</div>
+</header>
+<main>
+    <div class="introduction">
+    <img src="https://images.pexels.com/photos/9793489/pexels-photo-9793489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Mercedes AMG" style="float:right; width:350px; height:auto; margin-top: 20px">
+    <h1>THIS WEBSITE IS AWESOME</h1>
+        <sub>This website has some subtext that goes here under the main title. It's a smaller font
+            and the color is lower contrast.</sub>
+        <br>
+        <br>
+        <button type="button">Sign Up</button>
+    </div>
+
+    <figure class="container">
+        <figure class="one"><img src="https://cdn.pixabay.com/photo/2019/12/01/21/33/hellcat-4666514_1280.jpg" style="width:300px; height:auto;"><figcaption><br>American Muscle</figcaption></figure>
+        <figure class="two"><img src="https://cdn.pixabay.com/photo/2021/08/31/19/12/nissan-skyline-6589898_1280.jpg" style="width:300px; height:auto"><figcaption><br>Japanese Tuner</figcaption></figure>
+        <figure class="three"><img src="https://cdn.pixabay.com/photo/2021/09/12/19/05/car-6619311_1280.jpg" style="width:300px; height:auto"><figcaption><br>German Engineering</figcaption></figure>
+        </figure>
+
+
+    <div class="ending">
+        
+        <br>
+    
+            <div>I live my life a quartermile at a time... <p>For those 10 seconds or less, I'm free.</p></div>
+            <div>- Dom Torreto</div>
+            <br>
+            <br>
+        
+        
+    
+        
+    </div>
+
+
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
